@@ -21,7 +21,7 @@ The "Combi" beats represent a combination of the beats in the sub and low freque
 def audioToInt(audio):
     return (audio * (32767 / np.max(np.abs(audio)))).astype(np.int16)
 
-song = '../flim.mp3'
+song = './jcole.mp3'
 
 # Load the song from a mp3 file
 y, sr = librosa.load(song)
